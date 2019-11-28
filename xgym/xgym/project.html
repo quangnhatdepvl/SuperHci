@@ -24,25 +24,22 @@
 	<link rel="stylesheet" href="css/style.css"/>
 
 
-    <script>
-        function openPage(pageName, elmnt, color) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-            }
-            document.getElementById(pageName).style.display = "block";
-            elmnt.style.backgroundColor = color;
-        }
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-    </script>	
-
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 
 </head>
@@ -71,14 +68,11 @@
 	<section class="trainers-section" style = "padding : 22px 0 75px">
 		<div class="container">
 
-			 <button class="tablink" style="width: 200px; height: 50px; font-size :16px "
-                onclick="openPage('Home' )" id="defaultOpen">Requiment</button>
-            <button class="tablink" style="width: 200px; height: 50px; font-size :16px "
-                onclick="openPage('Design')">Design</button>
-            <button class="tablink" style="width: 200px; height: 50px; font-size :16px	 "
-                onclick="openPage('Implement')">Implement</button>
+		 <button class="tablinks" onclick="openCity(event, 'requiment')">Requiment</button>
+  <button class="tablinks" onclick="openCity(event, 'desgin')">Design</button>
+  <button class="tablinks" onclick="openCity(event, 'implement')">Implement</button>
        <br><br>
-   <div id="Home" class="tabcontent">
+   <div id="requiment" class="tabcontent">
 
                 <table class="table table-bordered" >
                     <thead class = "thead-dark">
@@ -229,17 +223,15 @@
                             <td>10/11/2019 đến 20/11/2019</td>
                        <td>Hoàn thành</td>
                         </tr>
-						
-						
-                    </thead>
-
+		               </thead>
                 </table>
 				</div>
-				 <div id="Design" class="tabcontent">
+				
+			  <div class="tabcontent" id="design">
 				 <h1> hello </p>	
 				 </div>
 				 
-				 <div id="Implement" class="tabcontent">
+				 <div id="implement" class="tabcontent">
 				 			<div id="accordion2">
 						<div class="card">
 							<div class="card-header">
@@ -248,7 +240,7 @@
 							</div>
 							<div id="collapse311" class="collapse show" data-parent="#accordion2">
 								<div class="card-body">
-									<a href="https://phimhaygroup14.tk/" target="_blank"><button
+									<a href="https://https://phimhaygroup14.tk/" target="_blank"><button
 											type="button" class="btn btn-primary"
 											style="background: lightblue;border: 1px solid lightblue;color: black;">
 											<i class="fa fa-caret-right"></i> Click để chuyển đến trang
@@ -264,7 +256,7 @@
 							</div>
 							<div id="collapse312" class="collapse show" data-parent="#accordion2">
 								<div class="card-body">
-									<a href="https://phimhaygroup14.tk/backend/backendPhim/template/index.html" target="_blank"><button
+									<a href="https://datsanbongdaonline.azurewebsites.net/BackEnd/homeAdmin.html" target="_blank"><button
 											type="button" class="btn btn-primary"
 											style="background: lightblue;border: 1px solid lightblue;color: black;">
 											<i class="fa fa-caret-right"></i> Click để chuyển đến trang
@@ -298,7 +290,7 @@
 					</div>
 				 </div>
     
-			
+			</div>
 		</div>
 	</section>
 	
