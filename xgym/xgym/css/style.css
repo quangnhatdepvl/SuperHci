@@ -604,7 +604,6 @@ Trainers section
  ---------------------*/
 
 .trainers-section {
-	padding: 121px 0 75px;
 }
 
 .trainers-section .section-title {
@@ -711,8 +710,7 @@ Footer section
  ---------------------*/
 
 .footer-section {
-	padding-top: 106px;
-	padding-bottom: 23px;
+	padding-top: 2%
 }
 
 .footer-widget {
