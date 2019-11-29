@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Group14-Result</title>
+	<title>Group14-Style guide</title>
 	<meta charset="UTF-8">
 
 	
@@ -21,8 +21,8 @@
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css"/>
 
-	<!-- result css -->
-	<link rel="stylesheet" href="css/result.css"/>
+	<!-- style guide css -->
+	<link rel="stylesheet" href="css/styleGuide.css"/>
 
 
 	<!--[if lt IE 9]>
@@ -48,8 +48,8 @@
             <li><a href="project.html">Project</a></li>
             <li><a href="groupDiary.html">Group Diary</a></li>
             <li><a href="technical.html">Technical</a></li>
-            <li><a class="active" href="result.html">Result</a></li>
-            <li><a href="styleGuide.html">Style Guide</a></li>
+            <li><a href="result.html">Result</a></li>
+            <li><a class="active" href="styleGuide.html">Style Guide</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
@@ -79,14 +79,17 @@
     <div class="section-padding-100-0">
         <div class="container">
 
-            <ul class="nav nav-tabs mb-3" role="tablist">
+            <ul class="nav nav-tabs mb-3 listName" role="tablist">
                 <li class="nav-item"><a class="nav-link active" href="#logo" role="tab" data-toggle="tab">Logo
                     </a></li>
-                <li class="nav-item"><a class="nav-link" href="#quangNhat" role="tab" data-toggle="tab">Quang Nhật</a></li>
-                <li class="nav-item"><a class="nav-link" href="#thanhNghi" role="tab" data-toggle="tab">Thanh Nghi</a></li>
-                <li class="nav-item"><a class="nav-link" href="#vanNghi" role="tab" data-toggle="tab">Văn Nghị</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tienNhan" role="tab" data-toggle="tab">Tiến Nhân</a></li>
-                <li class="nav-item"><a class="nav-link" href="#duongTai" role="tab" data-toggle="tab">Dương Tài</a></li>
+                <li class="nav-item"><a class="nav-link" href="#color" role="tab" data-toggle="tab">Color</a></li>
+                <li class="nav-item"><a class="nav-link" href="#typography" role="tab" data-toggle="tab">Typography</a></li>
+                <li class="nav-item"><a class="nav-link" href="#buttons" role="tab" data-toggle="tab">Buttons</a></li>
+                <li class="nav-item"><a class="nav-link" href="#icons" role="tab" data-toggle="tab">Icons</a></li>
+                <li class="nav-item"><a class="nav-link" href="#forms" role="tab" data-toggle="tab">Forms</a></li>
+                <li class="nav-item"><a class="nav-link" href="#layouts" role="tab" data-toggle="tab">Layouts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#images" role="tab" data-toggle="tab">Images</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dirstructure" role="tab" data-toggle="tab">Dir structure</a></li>
             </ul>
 
             <div class="tab-content">
@@ -99,202 +102,102 @@
                 <!-- End Logo -->
 
                 <!-- Start color -->
-                <div role="tabpanel" class="tab-pane" id="quangNhat">
-                    <div class="row" style="min-height: 75px">
-                            <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2 m-1 text-center" style="background-color: #dc3545;">
+                <div role="tabpanel" class="tab-pane" id="color">
+                    <div class="row text-center" style="min-height: 12rem" >
+                            <div class="col-lg-2 col-md-4 col-xl-2 col-sm-6 m-2 text-center" style="background-color: #dc3545;">
                                 <p style="color: white">#dc3545</p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2 m-1 text-center" style="background-color: #dc3545;">
-                                <p style="color: white">#dc3545</p>
+                            <div class="col-lg-2 col-md-4 col-xl-2 col-sm-6 m-2 text-center" style="background-color: #222;">
+                                <p style="color: white">#222</p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2 m-1 text-center" style="background-color: #dc3545;">
-                                <p style="color: white">#dc3545</p>
+                            <div class="col-lg-2 col-md-4 col-xl-2 col-sm-6 m-2 text-center" style="background-color: rgba(0,144,255,1);">
+                                <p style="color: white">rgba(0,144,255,1)</p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2 m-1 text-center" style="background-color: #dc3545;">
-                                <p style="color: white">#dc3545</p>
+                            <div class="col-lg-2 col-md-4 col-xl-2 col-sm-6 m-2 text-center" style="background-color: #00a920;">
+                                <p style="color: white">#00a920</p>
                             </div>
-                            <div class="col-lg-2 col-md-2 col-xl-2 col-sm-2 m-1 text-center" style="background-color: #dc3545;">
-                                <p style="color: white">#dc3545</p>
+                            <div class="col-lg-2 col-md-4 col-xl-2 col-sm-6 m-2 text-center" style="background-color: #333;">
+                                <p style="color: white">#333</p>
                             </div>
                     </div> 
 
                 </div>
                 <!-- End color -->
 
-                <!-- Start member Thanh Nghi -->
-                <div role="tabpanel" class="tab-pane" id="thanhNghi">
-                    <div class="col-12 p-4">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="mb-3 text-center">Đánh giá quá trình làm việc nhóm</h3>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Tranng web xem phim và backend</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/login.html">Trang đăng nhập
-                                            dẹp định kì</a></li>
-                                        <li><a target="_blank" href="#"> Tạo biểu mẫu liên hệ
-                                      </a></li>
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/backend/backendPhim/template/quanlytintuc.html">Tạo BackEnd: Quản lý tin tức
-                                          </a></li>
-                              
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Trang web nhóm</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="groupDiary.html">Trang
-                                            Group Diary</a></li>
+                <!-- Start typography -->
+                <div role="tabpanel" class="tab-pane" id="typography">
+                    <!-- Start font family -->
+                    <div>
+                        <h4>- Font family</h4>
+                        <p> Sử dụng font chữ chính cho phần heading, body và footer là : Verdana,sans-serif</p>
+                    </div>
+                    <!-- End font family -->
 
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Đánh giá</h4>
-                                <div class="altenate prize">
-                                    <ul>
-                                        <li><span>Hoàn thành: 100%</span></li>
-                                        <li><span>Đóng góp: 20%</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                
+                    <hr>
 
                 </div>
-                <!-- End member Thanh Nghi -->
+                <!-- End typography -->
 
-                <!-- Start member Van Nghi -->        
-                <div role="tabpanel" class="tab-pane" id="vanNghi">
-                    <div class="col-12 p-4">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="mb-3 text-center">Đánh giá quá trình làm việc nhóm</h3>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Tranng web xem phim và backend</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/">Tạo trang chủ
-                                           </a></li>
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/news.html"> Tạo trang tin tức
-                                            </a></li>
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/watchMovie.html">Tạo giao diện xem phim</a></li>
-                     
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Trang web nhóm</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="project.html">Trang chủ</a></li>
-                                        <li><a target="_blank" href="about.html">Trang
-                                           About </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Đánh giá</h4>
-                                <div class="altenate prize">
-                                    <ul>
-                                        <li><span>Hoàn thành: 100%</span></li>
-                                        <li><span>Đóng góp: 20%</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                
+                <!-- Start buttons -->        
+                <div role="tabpanel" class="tab-pane" id="buttons">
+                    <!-- Start buttons -->
+                    <div>
+                        <h4 class="mb-2">- Buttons</h4>
+                        <input class="button" type="button" value="Login" style="">
+                    </div>
+                    <!-- End buttons -->
+                    <hr>
+                    <!-- Start links -->
+                    <div>
+                        <h4 class="mb-2">- Links</h4>
+                        <span style="background-color: rgba(0,144,255,1); padding: 0.5rem;" class="m-2"><a style="color:#fff"href="#" >Tin mới nhất</a></span>
+                        <span style="background-color: #ff4d00; padding: 0.3rem" class="m-2"><a style="color:#fff;font-size: 15px" href="#" >Tin trong ngày</a></span>
+                        <span style="background-color:#00a920 ; padding: 0.2rem" class="m-2"><a style="color:#fff;font-size: 12px" href="#" >Nhân vật</a></span>
+                        
+                    </div>
+                    <!-- End link -->
+
                 </div>
-                <!-- End member Van Nghi -->
+                <!-- End buttons -->
 
-                <!-- Start member Tien Nhan -->
-                <div role="tabpanel" class="tab-pane" id="tienNhan">
-                    <div class="col-12 p-4">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="mb-3 text-center">Đánh giá quá trình làm việc nhóm</h3>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Tranng web xem phim và backend</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/movie.html">Tạo trang phim mới </a></li>
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/backend/backendPhim/template/phimdangPhat.html">Tạo BackEnd: Quản lý phim</a></li>
-                                      
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Trang web nhóm</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="technical.html">Trang
-                                            Technical</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Đánh giá</h4>
-                                <div class="altenate prize">
-                                    <ul>
-                                        <li><span>Hoàn thành: 100%</span></li>
-                                        <li><span>Đóng góp: 20%</span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                
+                <!-- Start Icons -->
+                <div role="tabpanel" class="tab-pane" id="icons">
+                    <i class="icon-person"></i>                
                 </div>
-                <!-- End member Tien Nhan -->
+                <!-- End icons -->
 
-                <!-- Start member Duong Tai -->
-                <div role="tabpanel" class="tab-pane" id="duongTai">
-                    <div class="col-12 p-4">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h3 class="mb-3 text-center">Đánh giá quá trình làm việc nhóm</h3>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Tranng web xem phim và backend</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                       <li><a target="_blank" href="https://phimhaygroup14.tk/forgotpass.html">Tạo trang quên mật khẩu</a>
-                                        </li>
-                                        <li><a target="_blank" href="https://phimhaygroup14.tk/charts.html">Tạo trang bảng xếp hạng</a>
-                                        </li>                                                                            
-                                       <li><a target="_blank" href="https://phimhaygroup14.tk/backend/backendPhim/template/thongketruycap.html#weekchart">Tạo BackEnd: Thống kê truy cập
-                                            </a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Trang web nhóm</h4>
-                                <div class="unordered">
-                                    <ul class="angle angle-right task">
-                                        <li><a target="_blank" href="result.html">Trang
-                                            Result</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <h4 class="mb-1">Đánh giá</h4>
-                                <div class="altenate prize">
-                                    <ul>
-                                        <li><span>Hoàn thành: 100%</span></li>
-                                        <li><span>Đóng góp: 20%</span></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Start forms -->
+                <div role="tabpanel" class="tab-pane" id="forms">
+                    <div>
+                        <h4>- Form đăng nhập</h4>
+                        <div class="form-login m-2" style="background-color: #000;width: 20%;height:50px;text-align: center;">
+                            <input type="text" placeholder="Tên đăng nhập" required="">
                         </div>
-                    </div>                
+                    </div>
+                    <hr>
+                    <div>
+                        <h4>- Form tìm kiếm</h4>
+                        <div class="form-seach m-2">
+                            <input type="text" name="search-box" placeholder="Tìm kiếm anime" autocomplete="off">
+                        </div>
+                    </div>                  
                 </div>
-                <!-- End member Duong Tai -->            
+                <!-- End forms -->      
+
+                <!-- Start layout -->
+                <div role="tabpanel" class="tab-pane" id="layouts">
+                </div>
+                <!-- End layout       -->
+
+                <!-- Start images -->
+                <div role="tabpanel" class="tab-pane" id="images">
+                </div>
+                <!-- End images       -->
+
+                <!-- Start dir stucture -->
+                <div role="tabpanel" class="tab-pane" id="dirstuctủe">
+                </div>
+                <!-- End stucture       -->
             </div>
             <!-- End tab-connten -->
         </div>

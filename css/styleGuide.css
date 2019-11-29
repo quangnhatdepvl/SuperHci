@@ -1,0 +1,43 @@
+.button{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+	width: 20%;
+}
+.button:hover{
+	cursor: pointer;
+    background: #ffc107;
+}
+.listName li a{
+	font-weight: 500;
+	color: #495057;
+}
+.nav-tabs .nav-link.active{
+	color: #060606;
+	font-weight: 700;
+}
+
+.form-login input{
+	border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-seach input{
+	width: 25%;
+    height: 30px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}

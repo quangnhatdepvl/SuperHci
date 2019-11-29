@@ -1,5 +1,6 @@
 .nav-tabs .nav-link.active{
 	color: #060606;
+	font-weight: 700;
 }
 .container ul li a{
 	color: #495057;
