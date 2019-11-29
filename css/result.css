@@ -1,7 +1,7 @@
 
 .card-header ul li a{
 	font-weight: 500;
-	color: #060606;
+	color: #495057;
 }
 
 nav-link.hover {
@@ -14,4 +14,8 @@ nav-link.active {
 
 .altenate ul li span{
 	background-color:#fcff18; 
+}
+
+.nav-tabs .nav-link.active{
+	color: #060606;
 }

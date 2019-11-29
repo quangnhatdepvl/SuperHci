@@ -20,44 +20,10 @@
 
 	<!-- Main Stylesheets -->
 	<link rel="stylesheet" href="css/style.css" />
-		
-	<style>
-		.tab {
-			overflow: hidden;
-			border: 1px solid #ccc;
-			background-color: #f1f1f1;
-		}
 
-		/* Style the buttons inside the tab */
-		.tab button {
-			background-color: inherit;
-			float: left;
-			border: none;
-			outline: none;
-			cursor: pointer;
-			padding: 14px 16px;
-			transition: 0.3s;
-			font-size: 17px;
-		}
+	<!-- Project sylesheets -->
+	<link rel="stylesheet" href="css/project.css" />
 
-		/* Change background color of buttons on hover */
-		.tab button:hover {
-			background-color: #ddd;
-		}
-
-		/* Create an active/current tablink class */
-		.tab button.active {
-			background-color: #ccc;
-		}
-
-		/* Style the tab content */
-		.tabcontent {
-			display: none;
-			padding: 6px 12px;
-			border: 1px solid #ccc;
-			border-top: none;
-		}
-	</style>
 </head>
 
 <body>
@@ -67,7 +33,7 @@
 	</div>
 
 	<!-- Header section -->
-	<header class="header-section" style="background-color: #3535351a;">
+	<header class="header-section" style="background-color: #dee2e6;position: fixed;width:100%;z-index: 100">
 		<a href="index.html" class="site-logo">
 			<img src="img/logo.png" alt="">
 		</a>
@@ -83,6 +49,8 @@
 		</ul>
 	</header>
 	<div class="clearfix"></div>
+	<div style="height: 94px;background-color: #dee2e6">
+	</div>
 	<!-- Header section end -->
 
 	<!-- Page top section -->
@@ -103,178 +71,179 @@
 	<section class="trainers-section" style="padding : 22px 0 75px">
 		<div class="container">
 
-			<button class="tablinks" onclick="openCity(event, 'requiment')" id="defaultOpen"style="width: 120px; height: 50px; font-size :16px; border: none;">Requiment</button>
-			<button class="tablinks" onclick="openCity(event, 'desgin')"style="width: 120px; height: 50px; font-size :16px;border: none; ">Design</button>
-			<button class="tablinks" onclick="openCity(event, 'implement')"style="width: 120px; height: 50px; font-size :16px;border: none; ">Implement</button>
-			<br><br>
-			<div id="requiment" class="tabcontent">
+		    <ul class="nav nav-tabs mb-3" role="tablist">
+		        <li class="nav-item"><a class="nav-link active" href="#requiment" role="tab" data-toggle="tab">Requiment
+		            </a></li>
+		        <li class="nav-item"><a class="nav-link" href="#design" role="tab" data-toggle="tab">Design</a></li>
+		        <li class="nav-item"><a class="nav-link" href="#implement" role="tab" data-toggle="tab">Implement</a></li>
+		    </ul>			
 
-				<table class="table table-bordered">
-					<thead class="thead-dark">
-						<tr>
-							<th data-toggle="tooltip" title="Số thứ tự">STT</th>
-							<th>Chức năng</th>
-							<th>Người đề xuất</th>
-							<th>Người thiết kế</th>
-							<th>Người hiện thực</th>
-							<th>Thời gian dự kiến</th>
-							<th>Trạng thái</th>
-						</tr>
-						<tr>
-							<td>1</td>
-							<td>Trang đăng nhập</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Đào Quang Nhật</td>
-							<td>Lê Thanh Nghị</td>
-							<td>15/10/2019 đến 18/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Trang quên mật khẩu</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>Mai Dương Tài</td>
-							<td>15/10/2019 đến 18/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Trang đăng ký</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Mai Dương Tài</td>
-							<td>Đào Quang Nhật</td>
-							<td>15/10/2019 đến 18/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Tạo trang index</td>
-							<td>Cả nhóm</td>
-							<td>Đào Quang Nhật</td>
-							<td>Võ Văn Nghị</td>
-							<td>15/10/2019 đến 18/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>5</td>
-							<td>Tạo trang thể loại Anime</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>Võ Văn Nghị</td>
-							<td>Đào Quang Nhật</td>
-							<td>25/10/2019 đến 28/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td>Tạo trang phim mới</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Mai Dương Tài</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>25/10/2019 đến 28/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>7</td>
-							<td>Tạo trang tin tức</td>
-							<td>Đào Quang Nhật</td>
-							<td>Mai Dương Tài</td>
-							<td>Võ Văn Nghị</td>
-							<td>25/10/2019 đến 28/10/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>8</td>
-							<td>Tạo trang bảng xếp hạng</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Võ Văn Nghị</td>
-							<td>Mai Dương Tài</td>
-							<td>25/10/2019 đến 28/10/2019
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>9</td>
-							<td>Tạo giao diện xem phim</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>Mai Dương Tài</td>
-							<td>Võ Văn Nghị</td>
-							<td>01/11/2019 đến 03/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>10</td>
-							<td>Tạo biểu mẫu liên hệ </td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>Đào Quang Nhật</td>
-							<td>Lê Thanh Nghị</td>
-							<td>01/11/2019 đến 03/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-
-						<tr>
-							<td>11</td>
-							<td>Tạo trang BackEnd</td>
-							<td>Cả nhóm</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Đào Quang Nhật</td>
-							<td>10/11/2019 đến 20/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>12</td>
-							<td>Tạo BackEnd: Quản lý phim</td>
-							<td>Võ Văn Nghị</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>10/11/2019 đến 20/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-
-						<tr>
-							<td>13</td>
-							<td>Tạo BackEnd: Quản lý tin tức </td>
-							<td>Đào Quang Nhật</td>
-							<td>Mai Dương Tài</td>
-							<td>Lê Thanh Nghị</td>
-							<td>10/11/2019 đến 20/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-
-						<tr>
-							<td>14</td>
-							<td>Tạo BackEnd: Thống kê truy cập</td>
-							<td>Mạnh Tiến Nhân</td>
-							<td>Đào Quang Nhật</td>
-							<td>Mai Dương Tài</td>
-							<td>10/11/2019 đến 20/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-						<tr>
-							<td>15</td>
-							<td>Tạo BackEnd: Top phim</td>
-							<td>Lê Thanh Nghị</td>
-							<td>Mai Dương Tài</td>
-							<td>Võ Văn Nghị</td>
-							<td>10/11/2019 đến 20/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
+			<div class="tab-content">
+		        <div role="tabpanel" class="tab-pane active" id="requiment">
+					<table class="table table-bordered">
+						<thead class="thead-dark">
 							<tr>
-							<td>16</td>
-							<td>Tạo trang Result</td>
-							<td>Võ Văn Nghị</td>
-							<td>Đào Quang Nhật</td>
-							<td>Mai Dương Tài</td>
-							<td>28/11/2019 đến 29/11/2019</td>
-							<td>Hoàn thành</td>
-						</tr>
-					</thead>
-				</table>
-			</div>
+								<th data-toggle="tooltip" title="Số thứ tự" class="text-center">STT</th>
+								<th>Chức năng</th>
+								<th>Người đề xuất</th>
+								<th>Người thiết kế</th>
+								<th>Người hiện thực</th>
+								<th>Thời gian dự kiến</th>
+								<th>Trạng thái</th>
+							</tr>
+							<tr>
+								<td class="text-center">1</td>
+								<td>Trang đăng nhập</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Đào Quang Nhật</td>
+								<td>Lê Thanh Nghị</td>
+								<td>15/10/2019 đến 18/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">2</td>
+								<td>Trang quên mật khẩu</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>Mai Dương Tài</td>
+								<td>15/10/2019 đến 18/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">3</td>
+								<td>Trang đăng ký</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Mai Dương Tài</td>
+								<td>Đào Quang Nhật</td>
+								<td>15/10/2019 đến 18/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">4</td>
+								<td>Tạo trang index</td>
+								<td>Cả nhóm</td>
+								<td>Đào Quang Nhật</td>
+								<td>Võ Văn Nghị</td>
+								<td>15/10/2019 đến 18/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">5</td>
+								<td>Tạo trang thể loại Anime</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>Võ Văn Nghị</td>
+								<td>Đào Quang Nhật</td>
+								<td>25/10/2019 đến 28/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">6</td>
+								<td>Tạo trang phim mới</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Mai Dương Tài</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>25/10/2019 đến 28/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">7</td>
+								<td>Tạo trang tin tức</td>
+								<td>Đào Quang Nhật</td>
+								<td>Mai Dương Tài</td>
+								<td>Võ Văn Nghị</td>
+								<td>25/10/2019 đến 28/10/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">8</td>
+								<td>Tạo trang bảng xếp hạng</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Võ Văn Nghị</td>
+								<td>Mai Dương Tài</td>
+								<td>25/10/2019 đến 28/10/2019
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">9</td>
+								<td>Tạo giao diện xem phim</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>Mai Dương Tài</td>
+								<td>Võ Văn Nghị</td>
+								<td>01/11/2019 đến 03/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">10</td>
+								<td>Tạo biểu mẫu liên hệ </td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>Đào Quang Nhật</td>
+								<td>Lê Thanh Nghị</td>
+								<td>01/11/2019 đến 03/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
 
-			<div class="tabcontent" id="desgin">
-								<div id="accordion">
-				
-							
+							<tr>
+								<td class="text-center">11</td>
+								<td>Tạo trang BackEnd</td>
+								<td>Cả nhóm</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Đào Quang Nhật</td>
+								<td>10/11/2019 đến 20/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">12</td>
+								<td>Tạo BackEnd: Quản lý phim</td>
+								<td>Võ Văn Nghị</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>10/11/2019 đến 20/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+
+							<tr>
+								<td class="text-center">13</td>
+								<td>Tạo BackEnd: Quản lý tin tức </td>
+								<td>Đào Quang Nhật</td>
+								<td>Mai Dương Tài</td>
+								<td>Lê Thanh Nghị</td>
+								<td>10/11/2019 đến 20/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+
+							<tr>
+								<td class="text-center">14</td>
+								<td>Tạo BackEnd: Thống kê truy cập</td>
+								<td>Mạnh Tiến Nhân</td>
+								<td>Đào Quang Nhật</td>
+								<td>Mai Dương Tài</td>
+								<td>10/11/2019 đến 20/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+							<tr>
+								<td class="text-center">15</td>
+								<td>Tạo BackEnd: Top phim</td>
+								<td>Lê Thanh Nghị</td>
+								<td>Mai Dương Tài</td>
+								<td>Võ Văn Nghị</td>
+								<td>10/11/2019 đến 20/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+								<tr>
+								<td class="text-center">16</td>
+								<td>Tạo trang Result</td>
+								<td>Võ Văn Nghị</td>
+								<td>Đào Quang Nhật</td>
+								<td>Mai Dương Tài</td>
+								<td>28/11/2019 đến 29/11/2019</td>
+								<td>Hoàn thành</td>
+							</tr>
+						</thead>
+					</table>
+		        </div>	
+
+		        <div role="tabpanel" class="tab-pane" id="design">
+					<div id="accordion">
 						<div class="card">
 							<div class="card-header">
 								<a class="card-link" data-toggle="collapse" href="#collapse1">
@@ -284,20 +253,17 @@
 								<div class="card-body">
 									<br>
 									<p style="font-weight: bold;">- Paint.net</p>
-									<br> <img class="img-fluid" src="Front-end/file_design-img/dangky.png"
-										alt="Chania" width="500" height="350"> 
-										<img class="img-fluid" src="Front-end/file_design-img/dangnhap.png"
-										alt="Chania" width="500" height="350">
-										<img class="img-fluid" src="Front-end/file_design-img/quenmatkhau.png"
-										alt="Chania" width="500" height="350" style="margin-top: 3px;margin-left: 100px;">
-										<a href="Front-end/file_design-img/dk-dn-qmk.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 100px;">
+									<br> 
+									<img class="img-fluid" src="Front-end/file_design-img/dangky.png" alt="Chania" width="500" height="350"> 
+									<img class="img-fluid" src="Front-end/file_design-img/dangnhap.png"	alt="Chania" width="500" height="350">
+									<img class="img-fluid" src="Front-end/file_design-img/quenmatkhau.png" alt="Chania" width="500" height="350" style="margin-top: 3px;margin-left: 100px;">
+
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
-										
-										<br>
-										
+										</button>
+									</a>
+									<br>	
 								</div>
 							</div>
 						</div>
@@ -310,15 +276,15 @@
 								<div class="card-body">
 									<br>
 									<p style="font-weight: bold;">- Paint.net</p>
-									<br> <img class="img-fluid" src="Front-end/file_design-img/khuyenmai.png"
-										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/khuyenmai.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<br> 
+									<img class="img-fluid" src="Front-end/file_design-img/khuyenmai.png" alt="Chania" width="600" height="350">
+									<a href="#" >
+										<button type="button" class="btn btn-download"
+											style="">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
-										 <br>
-										
+										</button>
+									</a>
+									<br>	
 								</div>
 							</div>
 						</div>
@@ -333,11 +299,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/tintuc.png"
 										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/tintuc.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -354,11 +320,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/lienhe.png"
 										alt="Chania" width="600" height="350"> 
-										<a href="Front-end/file_design-img/lienhe.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										<br>
 								</div>
 							</div>
@@ -374,11 +340,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/datsannhanh.png"
 										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/datsannhanh.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -394,11 +360,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/dstt.png"
 										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/dstt.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -414,11 +380,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/ddc.png"
 										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/ddc.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -434,11 +400,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/mdgl.png"
 										alt="Chania" width="600" height="350"> 
-										<a href="Front-end/file_design-img/mdgl.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										<br>
 								</div>
 							</div>
@@ -454,11 +420,11 @@
 									<p style="font-weight: bold;">- Paint.net</p>
 									<br> <img class="img-fluid" src="Front-end/file_design-img/dsdb.png"
 										alt="Chania" width="600" height="350">
-										<a href="Front-end/file_design-img/dsdb.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -473,11 +439,11 @@
 									<br> <br> <img class="img-fluid"
 										src="Front-end/file_design-img/quantri.png" alt="Chania" width="600"
 										height="350">
-										<a href="Front-end/file_design-img/quantri.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -492,11 +458,11 @@
 									<br> <br> <img class="img-fluid"
 										src="Front-end/file_design-img/tk-datsannhanh.png" alt="Chania" width="600"
 										height="350">
-										<a href="Front-end/file_design-img/tk-datsannhanh.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -508,14 +474,16 @@
 							</div>
 							<div id="collapse12" class="collapse" data-parent="#accordion1">
 								<div class="card-body">
-									<br> <br> <img class="img-fluid"
+									<br> 
+									<br>
+									<img class="img-fluid"
 										src="Front-end/file_design-img/tk-datsannhanh.png" alt="Chania" width="600"
 										height="350">
-										<a href="Front-end/file_design-img/tk-datsannhanh.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -530,11 +498,11 @@
 									<br> <br> <img class="img-fluid"
 										src="Front-end/file_design-img/tk-slnguoidung.png" alt="Chania" width="600"
 										height="350">
-										<a href="Front-end/file_design-img/tk-slnguoidung.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
@@ -549,80 +517,77 @@
 									<br> <br> <img class="img-fluid"
 										src="Front-end/file_design-img/tk-doanhthu.png" alt="Chania" width="600"
 										height="350">
-										<a href="Front-end/file_design-img/tk-doanhthu.rar" download><button
-											type="button" class="btn btn-secondary"
-											style="height: 45px; background: #0099CC;margin-left: 150px;">
+									<a href="#">
+										<button type="button" class="btn btn-download">
 											<i class="fa fa-cloud-download"></i> Tải về file thiết kế
-										</button></a>
+										</button>
+									</a>
 										 <br>
 								</div>
 							</div>
 						</div>
-					
-					
-					</div>
-			</div>
-
-			<div id="implement" class="tabcontent">
-				<div id="accordion2">
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapse311">Trang người
-								dùng</a>
-						</div>
-						<div id="collapse311" class="collapse show" data-parent="#accordion2">
-							<div class="card-body">
-								<a href="https://phimhaygroup14.tk/" target="_blank"><button type="button"
-										class="btn btn-primary"
-										style="background: lightblue;border: 1px solid lightblue;color: black;">
-										<i class="fa fa-caret-right"></i> Click để chuyển đến trang
-										kết quả
-									</button></a>
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapse312">Trang quản trị</a>
-						</div>
-						<div id="collapse312" class="collapse show" data-parent="#accordion2">
-							<div class="card-body">
-								<a href="https://phimhaygroup14.tk/backend/backendPhim/template/index.html"
-									target="_blank"><button type="button" class="btn btn-primary"
-										style="background: lightblue;border: 1px solid lightblue;color: black;">
-										<i class="fa fa-caret-right"></i> Click để chuyển đến trang
-										kết quả
-									</button></a>
-							</div>
-						</div>
-					</div>
-
-					<div class="card">
-						<div class="card-header">
-							<a class="collapsed card-link" data-toggle="collapse" href="#collapse313">Tiêu chí đạt được
-								trong quá trình làm project</a>
-						</div>
-						<div id="collapse313" class="collapse show" data-parent="#accordion2">
-							<div class="card-body">
-								<p style="color: black">
-									1. Giao diện gần gũi với hiện thực đời sống.<br>
-									2. Cho người dùng sự kiểm soát và tự do.<br>
-									3. Đảm bảo các nguyên tắc thiết kế (Thẩm mỹ, gợi lên nội dung, người dùng ít tốn
-									sức, đồng bộ ...).<br>
-									4. Đề cao sự thống nhất.<br>
-									5. Hạn chế lỗi.<br>
-									6. Cung cấp sự linh hoạt cho người dùng.<br>
-									7. Giảm tải những gì người dùng cần phải nhớ.<br>
-									8. Giúp người xác đinh và khắc phục sau khi lỗi xãy ra (trang lỗi).<br>
-									9. Hoàn thành 100% và vượt tiến độ project.<br>
-								</p>
-							</div>
-						</div>
-					</div>
+					</div>		        			
 				</div>
-			</div>
+		        
+		        <div role="tabpanel" class="tab-pane" id="implement">
+					<div id="accordion2">
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapse311">Trang người
+									dùng</a>
+							</div>
+							<div id="collapse311" class="collapse show" data-parent="#accordion2">
+								<div class="card-body">
+									<a href="https://phimhaygroup14.tk/" target="_blank"><button type="button"
+											class="btn btn-download">
+											<i class="fa fa-caret-right"></i> Click để chuyển đến trang
+											kết quả
+										</button></a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapse312">Trang quản trị</a>
+							</div>
+							<div id="collapse312" class="collapse show" data-parent="#accordion2">
+								<div class="card-body">
+									<a href="https://phimhaygroup14.tk/backend/backendPhim/template/index.html"
+										target="_blank">
+										<button type="button" class="btn btn-download">
+											<i class="fa fa-caret-right"></i> Click để chuyển đến trang
+											kết quả
+										</button>
+									</a>
+								</div>
+							</div>
+						</div>
 
-		</div>
+						<div class="card">
+							<div class="card-header">
+								<a class="collapsed card-link" data-toggle="collapse" href="#collapse313">Tiêu chí đạt được
+									trong quá trình làm project</a>
+							</div>
+							<div id="collapse313" class="collapse show" data-parent="#accordion2">
+								<div class="card-body">
+									<p style="color: black">
+										1. Giao diện gần gũi với hiện thực đời sống.<br>
+										2. Cho người dùng sự kiểm soát và tự do.<br>
+										3. Đảm bảo các nguyên tắc thiết kế (Thẩm mỹ, gợi lên nội dung, người dùng ít tốn
+										sức, đồng bộ ...).<br>
+										4. Đề cao sự thống nhất.<br>
+										5. Hạn chế lỗi.<br>
+										6. Cung cấp sự linh hoạt cho người dùng.<br>
+										7. Giảm tải những gì người dùng cần phải nhớ.<br>
+										8. Giúp người xác đinh và khắc phục sau khi lỗi xãy ra (trang lỗi).<br>
+										9. Hoàn thành 100% và vượt tiến độ project.<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>		        	
+		        </div>				
+			</div>
 		</div>
 	</section>
 
