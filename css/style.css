@@ -465,6 +465,8 @@ Header section
 .main-menu li a.active,
 .main-menu li a:hover {
 	background: #fcff18;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
 }
 
 .header-right {
@@ -514,7 +516,7 @@ Hero section
 }
 
 .hero-text h2 {
-	font-size: 96px;
+	font-size: 70px;
 	color: #fff;
 	line-height: 1;
 }
