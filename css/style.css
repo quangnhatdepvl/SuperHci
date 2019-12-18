@@ -60,9 +60,7 @@ p {
 	line-height: 2;
 }
 
-img {
-	max-width: 100%;
-}
+
 
 input:focus,
 select:focus,
@@ -455,7 +453,7 @@ Header section
 .main-menu li a {
 	font-size: 20px;
 	font-weight: 700;
-	color: #353535;
+	color: #ffffff;
 	margin-right: 25px;
 	padding: 2px 13px;
 	-webkit-transition: all 0.3s;
@@ -467,6 +465,7 @@ Header section
 	background: #fcff18;
 	border-top-left-radius: .25rem;
 	border-top-right-radius: .25rem;
+	color: black;
 }
 
 .header-right {
