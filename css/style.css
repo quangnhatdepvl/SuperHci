@@ -447,7 +447,7 @@ Header section
 
 .main-menu li {
 	display: inline-block;
-	padding-top: 33px;
+	padding-top: 13px;
 }
 
 .main-menu li a {
@@ -615,6 +615,7 @@ Trainers section
 	text-align: center;
 	padding: 0 5px;
 	margin-bottom: 30px;
+	box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.1);
 }
 
 .trainer-item .trainer-pic {
@@ -630,7 +631,7 @@ Trainers section
 }
 
 .trainer-item h4 {
-	margin-bottom: 20px;
+	/* margin-bottom: 20px; */
 }
 
 .trainer-item p {
@@ -715,12 +716,12 @@ Footer section
 }
 
 .footer-widget {
-	margin-bottom: 50px;
+	margin-bottom: 7px;
 }
 
 .footer-widget h4 {
 	color: #fff;
-	margin-bottom: 30px;
+	margin-bottom: 7px;
 }
 
 .footer-widget .fw-info-box img {
