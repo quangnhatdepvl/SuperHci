@@ -33,7 +33,17 @@ h6 {
 h1 {
 	font-size: 70px;
 }
-
+.ftco-footer .ftco-footer-widget h2 {
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 25px;
+    padding-top: 7%;
+}
+.ftco-footer p {
+    color: rgba(255, 255, 255, 1);
+}
 h2 {
 	font-size: 36px;
 }
@@ -93,7 +103,10 @@ Helper CSS
 	font-size: 48px;
 	line-height: 1;
 }
-
+.ftco-footer .ftco-footer-widget .open-hours li span {
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+}
 .section-title h2 span {
 	background: #fcff18;
 	display: inline-block;
@@ -733,7 +746,7 @@ Footer section
 }
 
 .footer-widget .fw-info-box p {
-	color: #b5babc;
+	color: #ffffff;
 	line-height: 1.8;
 	margin-bottom: 0;
 }
