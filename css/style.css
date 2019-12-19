@@ -447,7 +447,7 @@ Header section
 
 .main-menu li {
 	display: inline-block;
-	padding-top: 13px;
+	padding-top: 1.5%;
 }
 
 .main-menu li a {
@@ -465,6 +465,8 @@ Header section
 	background: #fcff18;
 	border-top-left-radius: .25rem;
 	border-top-right-radius: .25rem;
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
 	color: black;
 }
 
